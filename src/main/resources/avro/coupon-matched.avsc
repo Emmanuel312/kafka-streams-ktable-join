@@ -1,0 +1,43 @@
+{
+  "namespace": "com.kafka.streams.join",
+  "type": "record",
+  "name": "CouponMatched",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "userId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "couponId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "purchaseId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "couponValue",
+      "type": "double"
+    },
+    {
+      "name": "couponExpiredAt",
+      "type": "string"
+    }
+  ]
+}
